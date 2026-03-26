@@ -1,5 +1,6 @@
 *{
     background-color: #333;
+    color: white;
 }
 
 p{
@@ -23,6 +24,7 @@ body{
     color: white;
     border: none;
     border-radius: 5px;
+    margin-top: 50px;
 }
 
 #button:hover {
@@ -35,11 +37,23 @@ body{
 }
 
 #button:active{
-    background-color: #3b77b8;
+    background-color: #15d468;
 
 }
 
 #message {
-    color: white;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
+
+#conteneur-arc {
+    display: flex;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.image-arc {
+     cursor: grab;
+}
+

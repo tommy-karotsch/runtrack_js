@@ -4,7 +4,7 @@ function addOne()
 
     let btn = document.getElementById("button");
 
-    btn.addEventListener("click", function(){
+    btn.addEventListener("clicl", function(){
         compteur.textContent = parseInt(compteur.textContent) + 1;
     });
 }

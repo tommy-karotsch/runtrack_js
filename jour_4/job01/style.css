@@ -1,18 +1,15 @@
-*{
-    background-color: #333;
-}
-
-p{
-    color: white;
-}
-
 body{
+    background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     font-family: Arial, sans-serif;
+}
+
+p{
+    color: white;
 }
 
 #button {
@@ -29,17 +26,7 @@ body{
     background-color: #0056b3;
 }
 
-#compteur {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
 #button:active{
     background-color: #3b77b8;
 
-}
-
-#message {
-    color: white;
-    margin-bottom: 20px;
 }
