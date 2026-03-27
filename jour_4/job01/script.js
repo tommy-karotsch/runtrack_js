@@ -1,11 +1,15 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', function(){
+    const pElement = document.querySelector('p');
+    pElement.textContent = 'Expression : ' + pElement.textContent;
 
-    $('p').prepend('Expression : ')
-
-    $('button').on('click', function(){
+    const button = document.querySelector('button');
+    button.addEventListener('click', function(){
         fetch("expression.txt")
             .then(response => response.text())
-            .then(data => $('p').text('Expression : ' + data))
+            .then(data => {
+                const pElement = document.querySelector('p');
+                pElement.textContent = 'Expression : ' + data;
+            })
             .catch(error => console.error(error));
     });
-});
+}); 
