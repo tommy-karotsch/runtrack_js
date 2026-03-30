@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Job 03</title>
 </head>
@@ -11,20 +12,22 @@
         <form method="get">
             
             <label for="id">
-                <input type="text" name="id" id="id">
+                <input type="text" name="id" id="id" placeholder="ID">
             </label>
 
             <label for="nom">
-                <input type="text" name="nom" id="nom">
+                <input type="text" name="nom" id="nom" placeholder="Nom">
             </label>
 
             <label for="type">
-                <input type="text" name="type" id="type">
+                <select name="type" id="type">
+                    <option value="">Select a type</option>
+                    <option value="type1">Type 1</option>
+                    <option value="type2">Type 2</option>
+                </select>
             </label>
 
-            <label for="filter">
-                <input type="button" name="filter" id="filter" value="Filter">
-            </label>
+            <button type="submit">Filter</button>
         </form>
     </main>
 </body>

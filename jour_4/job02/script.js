@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", function(){
     const btn = document.getElementById("button");
 
     const paragraph = document.createElement("p");
-    paragraph.textContent = "";
-    document.body.prependChild(paragraph);
+    document.body.prepend(paragraph);
 
-    function jsonValueKey(chaine,key ) {
-        return chaine + key ;
+    function jsonValueKey(object, key) {
+        return object[key];
     }
 
     let objet = {
@@ -18,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function(){
     };
 
     btn.addEventListener("click", function(){
-        
+        paragraph.textContent =
+            "Prénom: " + jsonValueKey(objet, "prenom") +
+            " | Nom: " + jsonValueKey(objet, "nom") +
+            " | Age: " + jsonValueKey(objet, "age") +
+            " | Ville: " + jsonValueKey(objet, "ville");
     });
 });
