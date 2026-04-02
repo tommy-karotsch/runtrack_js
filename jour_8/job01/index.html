@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Job 01</title>
+</head>
+<body>
+    <header class="bg-gray-100">
+<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+    <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+  </div>
+  <div class="block lg:hidden">
+    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+  </div>
+  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div class="text-sm lg:flex-grow">
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        Accueil
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        Inscription
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        Connexion
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+        Rechercher
+      </a>
+    </div>
+  </div>
+</nav>
+    </header>
+
+
+    <main class="flex items-center justify-center min-h-screen">
+                
+    <div class="w-full max-w-2xl mx-auto">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2 text-shadow-lg/20" for="prenom">
+                Prénom
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="prenom" type="text" placeholder="Prénom">
+            </div>
+            <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2 text-shadow-lg/20" for="nom">
+                Nom
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nom" type="text" placeholder="Nom">
+            </div>
+            <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2 text-shadow-lg/20" for="email">
+                Email
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="adresse@email.com">
+            </div>
+            <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2 text-shadow-lg/20" for="adresse">
+                Adresse
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="adresse" type="text" placeholder="Votre adresse">
+            </div>
+            <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2 text-shadow-lg/20" for="password">
+                Password
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+            </div>
+            <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2 text-shadow-lg/20" for="password-confirm">
+                Confirmer Password
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password-confirm" type="password" placeholder="******************">
+            </div>
+            <div class="flex items-center justify-between">
+            <button class="bg-teal-500 hover:bg-teal-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                S'inscrire
+            </button>
+            </div>
+        </form>
+        <p class="text-center text-gray-500 text-xs">
+            &copy;2020 Acme Corp. All rights reserved.
+        </p>
+    </div>
+
+    </main>
+
+
+
+    <footer class="bg-gray-800 text-white">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 max-w-6xl mx-auto">
+            <div>
+                <h3 class="font-bold text-lg mb-4">À propos</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4">Liens utiles</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-white">Accueil</a></li>
+                    <li><a href="#" class="hover:text-white">Services</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4">Contact</h3>
+                <p class="text-gray-400">Email: info@example.com</p>
+                <p class="text-gray-400">Tél: +33 1 23 45 67 89</p>
+            </div>
+        </div>
+        <div class="bg-gray-900 p-4 text-center text-gray-400 text-sm">
+            &copy;2026 Acme Corp. All rights reserved.
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>
