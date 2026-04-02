@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Inscription</title>
 </head>
+
 <body>
     <main>
         <form action="" method="post">
-        
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required>
+    
+            <div class="flex flex-col mt-25 mb-3 ml-130 mr-180">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required class="border required:border-black-900 ...">
+                <p id="erreur_prenom" class="text-red-500 text-sm mt-1 hidden">La taille de votre prénom est trop petite</p>
+            </div>
 
-            <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" name="prenom" required>
+            <div class="flex flex-col mb-3 ml-130 mr-180">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required class="border required:border-black-900 ...">
+                <p id="erreur_nom" class="text-red-500 text-sm mt-1 hidden">La taille de votre nom est trop petite</p>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <div class="flex flex-col mb-3 ml-130 mr-180">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required class="border required:border-black-900 ...">
+                <p id="erreur_email" class="text-red-500 text-sm mt-1 hidden">Veuillez entrer une adresse email valide</p>
+            </div>
 
-            <label for="adresse">Adresse:</label>
-            <input type="text" id="adresse" name="adresse" required>
+            <div class="flex flex-col mb-3 ml-130 mr-180">
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse"required class="border required:border-black-900 ... ">
+                <p id="erreur_adresse" class="text-red-500 text-sm mt-1 hidden">Veuillez entrer une adresse valide</p>
+            </div>
 
-            <label for="code postal">Code postal:</label>
-            <input type="text" id="code postal" name="code postal" required>
+            <div class="flex flex-col mb-3 ml-130 mr-180">
+                <label for="code_postal">Code postal :</label>
+                <input type="text" id="code_postal" name="code_postal" required class="border required:border-black-900 ..." minlength="5" maxlength="5">
+                <p id="erreur_codepostal" class="text-red-500 text-sm mt-1 hidden">Veuillez entrer un code postal valide</p>
+            </div>
 
-            <input type="submit" value="Inscrire">
+            <div class="flex flex-col mb-3 ml-130 mr-180">
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password"required class="border required:border-black-900 ..."> 
+                <p id="erreur_password" class="text-red-500 text-sm mt-1 hidden">Le mot de passe doit contenir au moins 8 caractères</p>
+            </div>
+
+            <div class="flex flex-col mb-3 ml-130 mr-180">
+                <label for="confirm_password">Confirmer le mot de passe :</label>
+                <input type="password" id="confirm_password" name="confirm_password" required class="border required:border-black-900 ...">
+                <p id="erreur_confirmpassword" class="text-red-500 text-sm mt-1 hidden">Les mots de passe ne correspondent pas</p>
+            </div>
+
+            <input type="submit" value="S'inscrire" class="flex flex-col mb-3 ml-130 mr-180 border bg-teal-500 hover:bg-teal-600 active:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
 
         </form>
     </main>
+
 </body>
 </html>
