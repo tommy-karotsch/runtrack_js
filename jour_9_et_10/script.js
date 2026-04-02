@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     inputEmail.addEventListener('input', (e) => {
         const valeur = e.target.value;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const estInvalide = valeur.length > 0 && !emailRegex.test(valeur);
+        const emailLPTF = /@laplateforme\.io$/;
+        const estInvalide = valeur.length > 0 && !emailRegex.test(valeur) || emailLPTF.test(valeur);
         gererErreur(inputEmail, msgErreurEmail, estInvalide);
     });
     
