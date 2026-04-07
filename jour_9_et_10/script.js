@@ -53,12 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     inputEmail.addEventListener('input', (e) => {
         const valeur = e.target.value;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const emailLPTF = /@laplateforme\.io$/;
-        const estInvalide = valeur.length > 0 && !emailRegex.test(valeur) || emailLPTF.test(valeur);
+        const emailRegex = /^[a-zA-Z]+\.[a-zA-Z]+@laplateforme\.io$/;
+        const estInvalide = valeur.length > 0 && !emailRegex.test(valeur);
         gererErreur(inputEmail, msgErreurEmail, estInvalide);
     });
-    
+
     inputAdresse.addEventListener('input', (e) => {
         const valeur = e.target.value;
         const adresseRegex = /^\d{3,}/;
